@@ -233,6 +233,7 @@ footer{background:var(--ink);color:#c9bba9;padding:60px 0 30px}
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-8007NPDKXD"></script>
 <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-8007NPDKXD');</script>
 <script>(function(){function s(n,p){try{gtag('event',n,p)}catch(e){}}document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href^="tel:"]');if(a)s('phone_click',{phone_number:a.getAttribute('href').slice(4),link_text:(a.textContent||'').trim().slice(0,60)})},true);document.addEventListener('submit',function(e){var f=e.target;if(!f||f.getAttribute('role')==='search'||/search/i.test(f.id+' '+f.className+' '+(f.action||'')))return;var id=f.id||f.getAttribute('name')||f.className||'form';if(/estimat|calc/i.test(id+' '+(f.action||'')))s('estimator_use',{form_id:id});s('generate_lead',{form_id:id})},true);window.etAB=function(n,v){var k='etab_'+n,x;try{x=localStorage.getItem(k)}catch(e){}if(!x||v.indexOf(x)<0){x=v[Math.floor(Math.random()*v.length)];try{localStorage.setItem(k,x)}catch(e){}}s('ab_view',{experiment:n,variant:x});try{gtag('set','user_properties',{['ab_'+n]:x})}catch(e){}document.documentElement.setAttribute('data-ab-'+n,x);return x}})();</script>
+<script src="/lead-send.js" defer></script>
 </head>
 <body>
 <script type="application/ld+json">
@@ -732,7 +733,7 @@ footer{background:var(--ink);color:#c9bba9;padding:60px 0 30px}
       <p>Share your dates and wish list and we&rsquo;ll help you find the right furnished monthly rental. No obligation. Owners with monthly units to fill are welcome too.</p>
     </div>
     <div class="formwrap reveal">
-      <form action="https://formsubmit.co/info@eyetoad.com" method="POST" id="leadForm">
+      <form action="https://clients.eyetoad.com/lead/send.php" method="POST" id="leadForm">
         <input type="hidden" name="_subject" value="Belize Monthly Rental Inquiry - belizemonthlyrentals.com">
         <input type="hidden" name="_template" value="table">
         <input type="hidden" name="_captcha" value="false">
